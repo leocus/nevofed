@@ -35,10 +35,10 @@ fonts:
 
 Leonardo Lucio Custode, Ivanoe De Falco, Antonio Della Cioppa, Giovanni Iacca, Umberto Scafuri
 
-<img src="imgs/logo_unitn.jpg" alt="logo_unitn" style="height: 11%; position: absolute; top: 0px; left: 0px"/>
-<img src="imgs/logo_unisa.png" alt="logo_unisa" style="height: 11%; position: absolute; top: 0px; right: 0px"/>
-<img src="imgs/logo_cnr.svg" alt="logo_cnr" style="height: 11%; position: absolute; bottom: 0px; left: 0px"/>
-<img src="imgs/logo_gecco.png" alt="logo_gecco" style="height: 11%; position: absolute; bottom: 0px; right: 0px"/>
+<img src="/imgs/logo_unitn.jpg" alt="logo_unitn" style="height: 11%; position: absolute; top: 0px; left: 0px"/>
+<img src="/imgs/logo_unisa.png" alt="logo_unisa" style="height: 11%; position: absolute; top: 0px; right: 0px"/>
+<img src="/imgs/logo_cnr.svg" alt="logo_cnr" style="height: 11%; position: absolute; bottom: 0px; left: 0px"/>
+<img src="/imgs/logo_gecco.png" alt="logo_gecco" style="height: 11%; position: absolute; bottom: 0px; right: 0px"/>
 
 
 <!--
@@ -122,24 +122,24 @@ td{
 <!-- let's make a table with 4 rows and 5 columns -->
 <tr style="height: 25%;">
 <td style="width: 18%; opacity: 0">
-    <img src="imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
+    <img src="/imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
     Alice
 </td>
 <td style="width: 18%;">
     <v-click at="1">
-    <img src="imgs/person.svg" alt="Patient Bob" class="bob" style="width: 100%; color: green"/>
+    <img src="/imgs/person.svg" alt="Patient Bob" class="bob" style="width: 100%; color: green"/>
     Bob
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="2">
-    <img src="imgs/watch.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
+    <img src="/imgs/watch.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
     <span style="opacity: 0">smwatch</span>
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="3">
-    <img src="imgs/db.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
+    <img src="/imgs/db.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
     <span style="opacity: 0">database</span>
     </v-click>
 </td>
@@ -148,35 +148,35 @@ td{
 </tr>
 <tr style="height: 25%;">
 <td style="width: 18%">
-    <img src="imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
+    <img src="/imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
     Dr.&nbsp;Alice
 </td>
 <td style="width: 18%">
     <v-click at="1">
-    <img src="imgs/person.svg" alt="Patient Charlie" class="charlie" style="width: 100%"/>
+    <img src="/imgs/person.svg" alt="Patient Charlie" class="charlie" style="width: 100%"/>
     Charlie
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="2">
-    <img src="imgs/watch.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
+    <img src="/imgs/watch.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
     &nbsp;
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="3">
-    <img src="imgs/db.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
+    <img src="/imgs/db.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
     &nbsp;
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="4">
-    <img src="imgs/db.svg" alt="Central database" style="width: 100%"/>
+    <img src="/imgs/db.svg" alt="Central database" style="width: 100%"/>
     <span style="opacity: 0">database</span>
     </v-click>
 </td>
 <td style="width: 18%; opacity: 0">
-    <img src="imgs/db.svg" alt="Central database" style="width: 100%"/>
+    <img src="/imgs/db.svg" alt="Central database" style="width: 100%"/>
     <span style="opacity: 0">database</span>
 </td>
 </tr>
@@ -185,19 +185,19 @@ td{
 </td>
 <td style="width: 18%">
     <v-click at="1">
-    <img src="imgs/person.svg" alt="Patient Denise" class="denise" style="width: 100%"/>
+    <img src="/imgs/person.svg" alt="Patient Denise" class="denise" style="width: 100%"/>
     Denise
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="2">
-    <img src="imgs/watch.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
+    <img src="/imgs/watch.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
     &nbsp;
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="3">
-    <img src="imgs/db.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
+    <img src="/imgs/db.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
     &nbsp;
     </v-click>
 </td>
@@ -215,7 +215,7 @@ td{
 </td>
 <td style="width: 18%;">
 <v-click at="5">
-<img src="imgs/thief.svg" alt="" style="width: 80%; margin-left: auto; margin-right: auto"/>
+<img src="/imgs/thief.svg" alt="" style="width: 80%; margin-left: auto; margin-right: auto"/>
 </v-click>
 
 </td>
@@ -314,24 +314,24 @@ td{
 <!-- let's make a table with 4 rows and 5 columns -->
 <tr style="height: 25%;">
 <td style="width: 18%; opacity: 0">
-    <img src="imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
+    <img src="/imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
     Alice
 </td>
 <td style="width: 18%;">
-    <img src="imgs/person.svg" alt="Patient Bob" class="bob" style="width: 100%; color: green"/>
+    <img src="/imgs/person.svg" alt="Patient Bob" class="bob" style="width: 100%; color: green"/>
     Bob
 </td>
 <td style="width: 18%">
-    <img src="imgs/watch.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
+    <img src="/imgs/watch.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
     <span style="opacity: 0">smwatch</span>
 </td>
 <td style="width: 18%">
-    <img src="imgs/db.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
+    <img src="/imgs/db.svg" alt="Bob's watch" class="bob" style="width: 100%; color: green"/>
     <span style="opacity: 0">database</span>
 </td>
 <td style="width: 18%">
     <v-click at="1">
-    <img src="imgs/nn_central.svg" alt="Central database" class="bob" style="width: 80%"/>
+    <img src="/imgs/nn_central.svg" alt="Central database" class="bob" style="width: 80%"/>
     <span style="opacity: 0">database</span>
     </v-click>
 </td>
@@ -340,30 +340,30 @@ td{
 </tr>
 <tr style="height: 25%;">
 <td style="width: 18%">
-    <img src="imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
+    <img src="/imgs/dr_alice.svg" alt="Dr. Alice" style="width: 100%"/>
     Dr.&nbsp;Alice
 </td>
 <td style="width: 18%">
-    <img src="imgs/person.svg" alt="Patient Charlie" class="charlie" style="width: 100%"/>
+    <img src="/imgs/person.svg" alt="Patient Charlie" class="charlie" style="width: 100%"/>
     Charlie
 </td>
 <td style="width: 18%">
-    <img src="imgs/watch.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
+    <img src="/imgs/watch.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
     &nbsp;
 </td>
 <td style="width: 18%">
-    <img src="imgs/db.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
+    <img src="/imgs/db.svg" alt="Charlie's watch" class="charlie" style="width: 100%"/>
     &nbsp;
 </td>
 <td style="width: 18%">
     <v-click at="1">
-    <img src="imgs/nn_central.svg" alt="Central database" class="charlie" style="width: 80%"/>
+    <img src="/imgs/nn_central.svg" alt="Central database" class="charlie" style="width: 80%"/>
     <span style="opacity: 0">database</span>
     </v-click>
 </td>
 <td style="width: 18%">
     <v-click at="2">
-    <img src="imgs/nn_central.svg" alt="Central database" style="width: 80%"/>
+    <img src="/imgs/nn_central.svg" alt="Central database" style="width: 80%"/>
     <span style="opacity: 0">database</span>
     </v-click>
 </td>
@@ -372,20 +372,20 @@ td{
 <td style="width: 18%">
 </td>
 <td style="width: 18%">
-    <img src="imgs/person.svg" alt="Patient Denise" class="denise" style="width: 100%"/>
+    <img src="/imgs/person.svg" alt="Patient Denise" class="denise" style="width: 100%"/>
     Denise
 </td>
 <td style="width: 18%">
-    <img src="imgs/watch.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
+    <img src="/imgs/watch.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
     &nbsp;
 </td>
 <td style="width: 18%">
-    <img src="imgs/db.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
+    <img src="/imgs/db.svg" alt="Denise's watch" class="denise" style="width: 100%"/>
     &nbsp;
 </td>
 <td style="width: 18%">
     <v-click at="1">
-    <img src="imgs/nn_central.svg" alt="Denise's watch" class="denise" style="width: 80%"/>
+    <img src="/imgs/nn_central.svg" alt="Denise's watch" class="denise" style="width: 80%"/>
     &nbsp;
     </v-click>
 </td>
@@ -400,7 +400,7 @@ td{
 <td style="width: 18%">
 </td>
 <td style="width: 18%; opacity: 0">
-<img src="imgs/thief.svg" alt="" style="width: 80%; margin-left: auto; margin-right: auto"/>
+<img src="/imgs/thief.svg" alt="" style="width: 80%; margin-left: auto; margin-right: auto"/>
 </td>
 <td style="width: 18%;">
 </td>
@@ -456,7 +456,7 @@ margin-left: 0!important;
 ## Pros
 
 <ul class="flul">
-<li><table><tr><td style="width: 10%"><img src="imgs/privacy.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Privacy</h3></td></tr></table>
+<li><table><tr><td style="width: 10%"><img src="/imgs/privacy.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Privacy</h3></td></tr></table>
 <ul>
 <li style="padding-left: 15%;">No exchange of data</li>
 <li style="padding-left: 15%;">Share "knowledge"</li>
@@ -470,19 +470,19 @@ margin-left: 0!important;
 ## Cons
 
 <ul class="flul">
-<li><table><tr><td style="width: 10%"><img src="imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
+<li><table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
 <ul>
 <li style="padding-left: 15%;">Non-IID</li>
 <li style="padding-left: 15%;">Harder optimization</li>
 </ul>
 </li>
-<li><table><tr><td style="width: 10%"><img src="imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
+<li><table><tr><td style="width: 10%"><img src="/imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
 <ul>
 <li style="padding-left: 15%;">FL can hardly match centralized learning</li>
 <li style="padding-left: 15%;">A model does not see all the datapoints</li>
 </ul>
 </li>
-<li><table><tr><td style="width: 10%"><img src="imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
+<li><table><tr><td style="width: 10%"><img src="/imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
 <ul>
 <li style="padding-left: 15%;">Searching for architectures is much more costly</li>
 <li style="padding-left: 15%;">NAS methods requires search + training</li>
@@ -501,8 +501,8 @@ level: 2
   :click-1="{ x: 335, y: 95 }"
   :click-2="{ x: 16, y: 95 }"
 >
-<img src="imgs/dr_alice.svg" alt="Alice" style="width: 10%"/>
-<img src="imgs/nn_a.svg" alt="Bob" style="width: 10%; margin-left: 5%;"/>
+<img src="/imgs/dr_alice.svg" alt="Alice" style="width: 10%"/>
+<img src="/imgs/nn_a.svg" alt="Bob" style="width: 10%; margin-left: 5%;"/>
 
 <p style="position: fixed; top: -25.5%; left: 2%; font-size: 170%; transform: rotate(-45deg);">?</p>
 <p style="position: fixed; top: -32%; left: 4.4%; font-size: 170%; transform: rotate(0deg);">?</p>

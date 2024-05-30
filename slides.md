@@ -456,36 +456,63 @@ margin-left: 0!important;
 ## Pros
 
 <ul class="flul">
-<li><table><tr><td style="width: 10%"><img src="/imgs/privacy.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Privacy</h3></td></tr></table>
+<li>
+<v-click at="1">
+<table><tr><td style="width: 10%"><img src="/imgs/privacy.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Privacy</h3></td></tr></table>
+</v-click>
 <ul>
+<v-click at="2">
 <li style="padding-left: 15%;">No exchange of data</li>
+</v-click>
+<v-click at="3">
 <li style="padding-left: 15%;">Share "knowledge"</li>
+</v-click>
 </ul>
 </li>
 </ul>
-
 
 ::right::
 
 ## Cons
 
 <ul class="flul">
-<li><table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
+<li>
+<v-click at="4">
+<table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
+</v-click>
 <ul>
+<v-click at="5">
 <li style="padding-left: 15%;">Non-IID</li>
+</v-click>
+<v-click at="6">
 <li style="padding-left: 15%;">Harder optimization</li>
+</v-click>
 </ul>
 </li>
-<li><table><tr><td style="width: 10%"><img src="/imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
+<li>
+<v-click at="7">
+<table><tr><td style="width: 10%"><img src="/imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
+</v-click>
 <ul>
+<v-click at="8">
 <li style="padding-left: 15%;">FL can hardly match centralized learning</li>
+</v-click>
+<v-click at="9">
 <li style="padding-left: 15%;">A model does not see all the datapoints</li>
+</v-click>
 </ul>
 </li>
-<li><table><tr><td style="width: 10%"><img src="/imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
+<li>
+<v-click at="10">
+<table><tr><td style="width: 10%"><img src="/imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
+</v-click>
 <ul>
+<v-click at="11">
 <li style="padding-left: 15%;">Searching for architectures is much more costly</li>
+</v-click>
+<v-click at="12">
 <li style="padding-left: 15%;">NAS methods requires search + training</li>
+</v-click>
 </ul>
 </li>
 </ul>

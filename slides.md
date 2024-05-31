@@ -424,7 +424,7 @@ $$
 </v-click>
 
 ---
-layout: two-cols
+layout: full
 ---
 
 <style>
@@ -453,7 +453,10 @@ margin-left: 0!important;
 
 # Federated Learning
 
-## Pros
+<table style="border: None; width: 100%; vertical-align: top; margin: auto">
+<tr>
+<td style="width: 50%; vertical-align: top;">
+<h2>Pros</h2>
 
 <ul class="flul">
 <li>
@@ -470,10 +473,10 @@ margin-left: 0!important;
 </ul>
 </li>
 </ul>
+</td>
 
-::right::
-
-## Cons
+<td style="width: 50%">
+<h2>Cons</h2>
 
 <ul class="flul">
 <li>
@@ -516,6 +519,91 @@ margin-left: 0!important;
 </ul>
 </li>
 </ul>
+</td>
+</tr>
+</table>
+
+---
+layout: full
+---
+
+<style>
+.slidev-layout {
+padding: 8px;
+}
+.col-right {
+margin-top: 12%;
+}
+.flul {
+padding: 0;
+margin-top: 3%;
+}
+li {
+list-style-type: none;
+padding: 0;
+margin-left: 0!important;
+}
+.green {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(38%) saturate(4918%) hue-rotate(92deg) brightness(107%) contrast(102%);
+}
+.red {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(1965%) hue-rotate(0deg) brightness(94%) contrast(105%);
+}
+</style>
+
+# NEvoFed
+
+<table style="border: None; width: 100%; vertical-align: top; margin: auto">
+<tr>
+<td v-click.hide="1" style="width: 50%; vertical-align: top;">
+<h2>Pros</h2>
+
+<ul class="flul">
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/privacy.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Privacy</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;">No exchange of data</li>
+<li style="padding-left: 15%;">Share "knowledge"</li>
+</ul>
+</li>
+</ul>
+</td>
+
+<td v-click="0" v-motion
+  :initial="{ x: -50 }"
+  :enter="{ x: 0 }"
+  :click-1="{ x: -482}"
+     style="width: 50%">
+<h2><span v-click.hide='1'>Cons</span></h2>
+<h2 style="margin-top: -1em;"><span v-click='1'> Focus</span></h2>
+
+<ul class="flul">
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;">Non-IID</li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 2, color: '#d30', strokeWidth: '3'}">Harder optimization</span></li>
+</ul>
+</li>
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;">FL can hardly match centralized learning</li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 3, color: '#d30', strokeWidth: '3'}">A model does not see all the datapoints</span></li>
+</ul>
+</li>
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;">Searching for architectures is much more costly</li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 4, color: '#d30', strokeWidth: '3'}">NAS methods requires search + training</span></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+
 
 ---
 level: 2

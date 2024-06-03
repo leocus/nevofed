@@ -581,8 +581,8 @@ margin-left: 0!important;
 <li>
 <table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
 <ul>
-<li style="padding-left: 15%;">Non-IID</li>
-<li style="padding-left: 15%;"><span v-mark="{ at: 2, color: '#d30', strokeWidth: '3'}">Harder optimization</span></li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 2, color: '#d30', strokeWidth: '3'}">Non-IID</span></li>
+<li style="padding-left: 15%;">Harder optimization</li>
 </ul>
 </li>
 <li>
@@ -607,27 +607,6 @@ margin-left: 0!important;
 
 ---
 level: 2
----
-
-# Ok, but...
-#### Who designs the neural network?
-
-<div style="display: flex;" v-click="[1, 4]" v-motion
-  :click-1="{ x: 335, y: 95 }"
-  :click-2="{ x: 16, y: 95 }"
->
-<img src="/imgs/dr_alice.svg" alt="Alice" style="width: 10%"/>
-<img src="/imgs/nn_a.svg" alt="Bob" style="width: 10%; margin-left: 5%;"/>
-
-<p style="position: fixed; top: -25.5%; left: 2%; font-size: 170%; transform: rotate(-45deg);">?</p>
-<p style="position: fixed; top: -32%; left: 4.4%; font-size: 170%; transform: rotate(0deg);">?</p>
-<p style="position: fixed; top: -23%; left: 6.8%; font-size: 170%; transform: rotate(45deg);">?</p>
-</div>
-
-<v-click at="2"><span style="position: fixed; top: 25%; left: 50%; padding: 0; margin: 0">Architecture design requires an expert</span></v-click>
-<v-click at="3"><span style="position: fixed; top: 37.5%; left: 50%; padding: 0; margin: 0">In FL, the architecture is often decided a-priori</span></v-click>
-
----
 ---
 
 # End

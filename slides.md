@@ -733,31 +733,52 @@ level: 2
 </table>
 </div>
 
-<div v-click="2" v-motion
+<div v-click="[2,4]" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: 50, x: 320 }"
   style="width: 5%; position: fixed; top: 20%; left: 6.5%">
 <img src="/imgs/nn(1).svg" alt="NEvoFed" class="green"/>
 </div>
 
-<div v-click="2" v-motion
+<div v-click="[2,4]" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: 20, x: -370 }"
   style="width: 5%; position: fixed; top: 25%; right: 6.5%">
 <img src="/imgs/nn(6).svg" alt="NEvoFed" class="orange"/>
 </div>
 
-<div v-click="2" v-motion
+<div v-click="[2,4]" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: -200, x: 126 }"
   style="width: 5%; position: fixed; bottom: 7.4%; left: 26.5%">
 <img src="/imgs/nn(11).svg" alt="NEvoFed" class="blue"/>
 </div>
 
-<div v-click="2" v-motion
+<div v-click="[2,4]" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: -200, x: -176 }"
   style="width: 5%; position: fixed; bottom: 7.4%; right: 26.5%">
+<img src="/imgs/nn(4).svg" alt="NEvoFed" class="purple"/>
+</div>
+
+<div v-click="4" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: -20, x: -260 }"
+  style="width: 5%; position: fixed; bottom: 43.75%; right: 44.5%">
+<img src="/imgs/nn(4).svg" alt="NEvoFed" class="purple"/>
+</div>
+
+<div v-click="4" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: -20, x: 280 }"
+  style="width: 5%; position: fixed; bottom: 43.75%; right: 44.5%">
+<img src="/imgs/nn(4).svg" alt="NEvoFed" class="purple"/>
+</div>
+
+<div v-click="4" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: 200, x: -160 }"
+  style="width: 5%; position: fixed; bottom: 43.75%; right: 44.5%">
 <img src="/imgs/nn(4).svg" alt="NEvoFed" class="purple"/>
 </div>
 

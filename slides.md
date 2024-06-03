@@ -771,6 +771,7 @@ level: 2
 <div v-click="3" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: -20, x: 280 }"
+  :click-4="{ y: -103, x: 280 }"
   style="width: 5%; position: fixed; bottom: 43.75%; right: 44.5%">
 <img src="/imgs/nn(4).svg" alt="NEvoFed" class="purple"/>
 </div>
@@ -792,6 +793,7 @@ level: 2
 <div v-click="3" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: -20, x: 259 }"
+  :click-4="{ y: -20, x: 325 }"
   style="width: 5%; position: fixed; bottom: 43.7%; left: 39.4%">
 <img src="/imgs/nn(11).svg" alt="NEvoFed" class="blue"/>
 
@@ -806,6 +808,7 @@ level: 2
 <div v-click="3" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: -90, x: 261 }"
+  :click-4="{ y: -10, x: 261 }"
   style="width: 5%; position: fixed; top: 29%; left: 39.2%">
 <img src="/imgs/nn(1).svg" alt="NEvoFed" class="green"/>
 </div>
@@ -813,6 +816,7 @@ level: 2
 <div v-click="3" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: 290, x: -180 }"
+  :click-4="{ y: 215, x: -180 }"
   style="width: 5%; position: fixed; top: 29%; left: 39.2%">
 <img src="/imgs/nn(1).svg" alt="NEvoFed" class="green"/>
 </div>
@@ -834,6 +838,7 @@ level: 2
 <div v-click="3" v-motion
   :initial="{ y: 0, x: 0 }"
   :enter="{ y: 295, x: 230 }"
+  :click-4="{ y: 295, x: 165 }"
   style="width: 5%; position: fixed; top: 28.6%; right: 44.3%">
 <img src="/imgs/nn(6).svg" alt="NEvoFed" class="orange"/>
 </div>
@@ -845,3 +850,7 @@ level: 2
 <img src="/imgs/nn(6).svg" alt="NEvoFed" class="orange"/>
 </div>
 
+---
+---
+
+# New

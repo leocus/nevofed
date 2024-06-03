@@ -234,7 +234,7 @@ td{
 <span style="position: fixed; bottom: 10%; left: 30%; padding: 0; margin: 0">Denise goes for a walk everyday at 2 pm</span>
 </v-click>
 
-<p style="position: fixed; bottom: 0%; font-size: 50%; padding: 0; margin: 0">Icons from: Font Awesome, Material Symbols, Phosphor, Streamline</p>
+<p style="position: fixed; bottom: 0%; font-size: 50%; padding: 0; margin: 0">Icons from: Font Awesome, Material Symbols, Phosphor, Streamline, IconPark TwoTone</p>
 
 <!--
 Here is another comment.
@@ -425,6 +425,7 @@ $$
 
 ---
 layout: full
+transition: none
 ---
 
 <style>
@@ -604,9 +605,159 @@ margin-left: 0!important;
 </tr>
 </table>
 
+<span v-click="5" style="position: fixed; top: 44.5%; left: 57%; background-color: red; padding: 16px; border-radius: 5px; border: 1px solid #a00; color: white"><h3>Federated Neuroevolution</h3></span>
+
 
 ---
 level: 2
 ---
 
-# End
+<style>
+.green {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(49%) saturate(3784%) hue-rotate(80deg) brightness(112%) contrast(113%);
+}
+
+.blue {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(2313%) hue-rotate(190deg) brightness(97%) contrast(101%);
+}
+
+.purple {
+    filter: brightness(0) saturate(100%) invert(32%) sepia(96%) saturate(7490%) hue-rotate(291deg) brightness(93%) contrast(119%);
+}
+
+.orange {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(100%) saturate(773%) hue-rotate(357deg) brightness(99%) contrast(108%);
+}
+
+.cputable {
+  border-spacing: 8px;
+}
+</style>
+
+# NEvoFed
+
+<div style="position: relative; top: 15%; left: 40%; width: 15%; display: flex">
+<img src="/imgs/server.svg" alt="NEvoFed" style="width: 100%; margin-right: 8px"/>
+</div>
+
+<div class="green" style="position: fixed; top: 25%; left: 10%; width: 20%; display: flex">
+<table class="cputable">
+<tr>
+<td style="width: 33%">
+<v-click at="1"><img src="/imgs/nn(1).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+</td>
+<td style="width: 33%">
+<img src="/imgs/cpu.svg" alt="NEvoFed" style="width: 100%; margin: auto"/>
+</td>
+<td style="width: 33%">
+<v-click at="1"><img src="/imgs/nn(5).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<v-click at="1"><img src="/imgs/nn(5).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="orange" style="position: fixed; top: 25%; right: 15%; width: 20%; display: flex">
+<table class="cputable">
+  <tr>
+  </tr>
+  <tr>
+    <td style="width: 33%">
+      <v-click at="1"><img src="/imgs/nn(2).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+    <td>
+      <img src="/imgs/cpu.svg" alt="NEvoFed" style="width: 100%"/>
+    </td>
+    <td style="width: 33%">
+      <v-click at="1"><img src="/imgs/nn(6).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+  </tr>
+  <tr>
+  <td></td>
+    <td style="width: 33%">
+      <v-click at="1"><img src="/imgs/nn(10).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+  </tr>
+</table>
+</div>
+<div class="blue" style="position: fixed; top: 65%; left: 20%; width: 20%; display: flex">
+<table class="cputable">
+  <tr>
+    <td style="width: 33%">
+      <v-click at="1"><img src="/imgs/nn(3).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+    <td>
+      <img src="/imgs/cpu.svg" alt="NEvoFed" style="width: 100%"/>
+    </td>
+    <td style="width: 33%">
+      <v-click at="1"><img src="/imgs/nn(7).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="width: 33%">
+      <v-click at="1">
+      <img src="/imgs/nn(11).svg" alt="NEvoFed" style="width: 100%"/>
+      </v-click>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div class="purple" style="position: fixed; top: 65%; right: 20%; width: 20%; display: flex">
+<table class="cputable">
+  <tr>
+    <td style="width: 25%">
+      <v-click at="1"><img src="/imgs/nn(4).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+    <td style="width: 25%">
+      <img src="/imgs/cpu.svg" alt="" style="width: 100%"/>
+    </td>
+    <td style="width: 25%">
+      <v-click at="1"><img src="/imgs/nn(9).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 25%">
+    </td>
+    <td style="width: 25%">
+      <v-click at="1"><img src="/imgs/nn(1).svg" alt="NEvoFed" style="width: 100%"/></v-click>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div v-click="2" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: 50, x: 320 }"
+  style="width: 5%; position: fixed; top: 20%; left: 6.5%">
+<img src="/imgs/nn(1).svg" alt="NEvoFed" class="green"/>
+</div>
+
+<div v-click="2" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: 20, x: -370 }"
+  style="width: 5%; position: fixed; top: 25%; right: 6.5%">
+<img src="/imgs/nn(6).svg" alt="NEvoFed" class="orange"/>
+</div>
+
+<div v-click="2" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: -200, x: 126 }"
+  style="width: 5%; position: fixed; bottom: 7.4%; left: 26.5%">
+<img src="/imgs/nn(11).svg" alt="NEvoFed" class="blue"/>
+</div>
+
+<div v-click="2" v-motion
+  :initial="{ y: 0, x: 0 }"
+  :enter="{ y: -200, x: -176 }"
+  style="width: 5%; position: fixed; bottom: 7.4%; right: 26.5%">
+<img src="/imgs/nn(4).svg" alt="NEvoFed" class="purple"/>
+</div>
+

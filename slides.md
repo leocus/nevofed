@@ -955,7 +955,7 @@ u {
 </table>
 
 <span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 34.5%; left: 57%; background-color: green; padding: 16px; border-radius: 5px; border: 1px solid #0a0; color: white"><h3>Models "see" all the data</h3></span>
-<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 64.5%; left: 57%; background-color: green; padding: 16px; border-radius: 5px; border: 1px solid #0a0; color: white"><h3>Coupled search and training</h3></span>
+<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 64.5%; left: 57%; background-color: green; padding: 16px; border-radius: 5px; border: 1px solid #0a0; color: white"><h3>Simultaneous distributed search and training</h3></span>
 <span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 34.5%; left: 16%;"><Arrow x1="10" y1="20" x2="390" y2="30" /></span>
 <span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 45%; left: 40%;"><Arrow x1="10" y1="110" x2="160" y2="10" /></span>
 <span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 72%; left: 40%;"><Arrow x1="10" y1="80" x2="160" y2="10" /></span>
@@ -964,7 +964,6 @@ u {
 ---
 ---
 
-# Results
-
+# Experimental setup
 
 

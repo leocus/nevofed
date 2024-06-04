@@ -632,6 +632,10 @@ level: 2
 .cputable {
   border-spacing: 8px;
 }
+
+.cpudbtable {
+  padding: 0 !important; 
+}
 </style>
 
 # NEvoFed
@@ -647,7 +651,14 @@ level: 2
 <v-click at="1"><img src="/imgs/nn(1).svg" alt="NEvoFed" style="width: 100%"/></v-click>
 </td>
 <td style="width: 33%">
-<img src="/imgs/cpu.svg" alt="NEvoFed" style="width: 100%; margin: auto"/>
+      <table>
+      <tr><td class="cpudbtable" style="width: 50%">
+      <img src="/imgs/cpu.svg" alt="" style="width: 100%"/>
+      </td></tr>
+      <tr><td></td><td class="cpudbtable">
+      <img src="/imgs/db.svg" alt="NEvoFed" style="width: 100%"/>
+      </td></tr>
+      </table>
 </td>
 <td style="width: 33%">
 <v-click at="1"><img src="/imgs/nn(5).svg" alt="NEvoFed" style="width: 100%"/></v-click>
@@ -672,7 +683,14 @@ level: 2
       <div v-click="[1,4]" v-motion :leave="{ y: 0, x: 0 }"> <img src="/imgs/nn(2).svg" alt="NEvoFed" style="width: 100%"/></div>
     </td>
     <td>
-      <img src="/imgs/cpu.svg" alt="NEvoFed" style="width: 100%"/>
+      <table>
+      <tr><td class="cpudbtable" style="width: 50%">
+      <img src="/imgs/cpu.svg" alt="" style="width: 100%"/>
+      </td></tr>
+      <tr><td></td><td class="cpudbtable">
+      <img src="/imgs/db.svg" alt="NEvoFed" style="width: 100%"/>
+      </td></tr>
+      </table>
     </td>
     <td style="width: 33%">
       <div v-click="[1,4]" v-motion :leave="{ y: 0, x: 0 }"><img src="/imgs/nn(6).svg" alt="NEvoFed" style="width: 100%"/></div>
@@ -693,7 +711,14 @@ level: 2
       <div v-click="[1,4]" v-motion :leave="{ y: 0, x: 0 }"><img src="/imgs/nn(3).svg" alt="NEvoFed" style="width: 100%"/></div>
     </td>
     <td>
-      <img src="/imgs/cpu.svg" alt="NEvoFed" style="width: 100%"/>
+      <table>
+      <tr><td class="cpudbtable" style="width: 50%">
+      <img src="/imgs/cpu.svg" alt="" style="width: 100%"/>
+      </td></tr>
+      <tr><td></td><td class="cpudbtable">
+      <img src="/imgs/db.svg" alt="NEvoFed" style="width: 100%"/>
+      </td></tr>
+      </table>
     </td>
     <td style="width: 33%">
       <v-click at="1"><img src="/imgs/nn(7).svg" alt="NEvoFed" style="width: 100%"/></v-click>
@@ -717,7 +742,14 @@ level: 2
       <v-click at="1"><img src="/imgs/nn(4).svg" alt="NEvoFed" style="width: 100%"/></v-click>
     </td>
     <td style="width: 25%">
+      <table>
+      <tr><td class="cpudbtable" style="width: 50%">
       <img src="/imgs/cpu.svg" alt="" style="width: 100%"/>
+      </td></tr>
+      <tr><td></td><td class="cpudbtable">
+      <img src="/imgs/db.svg" alt="NEvoFed" style="width: 100%"/>
+      </td></tr>
+      </table>
     </td>
     <td style="width: 25%">
       <v-click at="1"><img src="/imgs/nn(9).svg" alt="NEvoFed" style="width: 100%"/></v-click>
@@ -853,4 +885,4 @@ level: 2
 ---
 ---
 
-# New
+# 

@@ -610,6 +610,7 @@ margin-left: 0!important;
 
 ---
 level: 2
+transition: slide-right
 ---
 
 <style>
@@ -882,7 +883,88 @@ level: 2
 <img src="/imgs/nn(6).svg" alt="NEvoFed" class="orange"/>
 </div>
 
+<div v-click="[1,2]" style="position: fixed; top: 8%; left: 1%"><h3>Evaluate generation</h3></div>
+<div v-click="[2,3]" style="position: fixed; top: 8%; left: 1%"><h3>Send best to server</h3></div>
+<div v-click="[3,4]" style="position: fixed; top: 8%; left: 1%"><h3>Receive other bests from server</h3></div>
+<div v-click="4" style="position: fixed; top: 8%; left: 1%"><h3>Update population</h3></div>
+
 ---
 ---
 
-# 
+<style>
+.slidev-layout {
+padding: 8px;
+}
+.col-right {
+margin-top: 12%;
+}
+.flul {
+padding: 0;
+margin-top: 3%;
+}
+li {
+list-style-type: none;
+padding: 0;
+margin-left: 0!important;
+}
+.green {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(38%) saturate(4918%) hue-rotate(92deg) brightness(107%) contrast(102%);
+}
+.red {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(1965%) hue-rotate(0deg) brightness(94%) contrast(105%);
+}
+u {
+  text-decoration: none;
+  border-bottom: 2px solid red;
+}
+</style>
+
+# NEvoFed
+
+<table style="border: None; width: 50%; vertical-align: top; margin-right: auto">
+<tr>
+<td v-click="0" style="width: 50%">
+<h2><span v-click.hide='0'>Cons</span></h2>
+<h2 style="margin-top: -1em;">Focus</h2>
+
+<ul class="flul">
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;"><u>Non-IID</u></li>
+<li style="padding-left: 15%;">Harder optimization</li>
+</ul>
+</li>
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;">FL can hardly match centralized learning</li>
+<li style="padding-left: 15%;"><u>A model does not see all the datapoints</u></li>
+</ul>
+</li>
+<li>
+<table><tr><td style="width: 10%"><img src="/imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
+<ul>
+<li style="padding-left: 15%;">Searching for architectures is much more costly</li>
+<li style="padding-left: 15%;"><u>NAS methods requires search + training</u></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 34.5%; left: 57%; background-color: green; padding: 16px; border-radius: 5px; border: 1px solid #0a0; color: white"><h3>Models "see" all the data</h3></span>
+<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 64.5%; left: 57%; background-color: green; padding: 16px; border-radius: 5px; border: 1px solid #0a0; color: white"><h3>Coupled search and training</h3></span>
+<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 34.5%; left: 16%;"><Arrow x1="10" y1="20" x2="390" y2="30" /></span>
+<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 45%; left: 40%;"><Arrow x1="10" y1="110" x2="160" y2="10" /></span>
+<span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 72%; left: 40%;"><Arrow x1="10" y1="80" x2="160" y2="10" /></span>
+
+
+---
+---
+
+# Results
+
+
+

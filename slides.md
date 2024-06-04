@@ -234,7 +234,7 @@ td{
 <span style="position: fixed; bottom: 10%; left: 30%; padding: 0; margin: 0">Denise goes for a walk everyday at 2 pm</span>
 </v-click>
 
-<p style="position: fixed; bottom: 0%; font-size: 50%; padding: 0; margin: 0">Icons from: Font Awesome, Material Symbols, Phosphor, Streamline, IconPark TwoTone</p>
+<p style="position: fixed; bottom: 0%; font-size: 50%; padding: 0; margin: 0">Icons from: Font Awesome, Material Symbols, Phosphor, Streamline, IconPark TwoTone, Health Icons</p>
 
 <!--
 Here is another comment.
@@ -964,6 +964,116 @@ u {
 ---
 ---
 
+<style>
+.card {
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 30%;
+    padding: 1%;
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+
+.cardcontainer {
+    display: flex;
+    height: 70%;
+    width: 100%;
+}
+
+.cardimage {
+    height: 25%;
+    vertical-align: bottom;
+}
+
+.card h3 {
+    text-align: center;
+}
+</style>
+
 # Experimental setup
+## Datasets
+<br>
+<div class="cardcontainer">
+<div v-click="1" class="card">
+<div class="cardimage">
+<img src="/imgs/sleeping_guy.svg" alt="" class="orange" style="width: 30%; margin: auto"/>
+</div>
+<h3 class="orange">Apnea-ECG</h3>
+<br>
+    <ul>
+    <li>Task: Obstructive Sleep Apnea</li>
+    <li>
+        Inputs: 12 HRV samples
+        <ul>
+            <li style="font-size: 80%; padding-left: 15%;">Heart Variability Values </li>
+            <li style="font-size: 80%; padding-left: 15%;">Measured with an ECG</li>
+        </ul>
+    </li>
+    <li>Output: OSA/No OSA</li>
+    </ul>
+</div>
+    
+<div v-click="2" class="card">
+<div class="cardimage">
+<img src="/imgs/diabetes.svg" alt="" class="purple" style="width: 30%; margin: auto"/>
+</div>
+<h3 class="purple">Ohio T1DM</h3>
+<br>
+    <ul>
+    <li>Task: Glucose level prediction</li>
+    <li>
+        Inputs: 39 glucose level samples
+        <ul>
+            <li style="font-size: 80%; padding-left: 15%;">Sampling Period: 5 min</li>
+        </ul>
+    </li>
+    <li>
+    Output: 7 classes
+        <ul>
+            <li style="font-size: 80%; padding-left: 15%;">Risk level</li>
+            <li style="font-size: 80%; padding-left: 15%;">Time horizon: 30 min</li>
+        </ul>
+    </li>
+    </ul>
+</div>
+    
+<div v-click="3" class="card">
+<div class="cardimage">
+<img src="/imgs/walking.svg" alt="" class="blue" style="width: 20%; margin: auto; position: relative; top: 20%;"/>
+</div>
+<h3 class="blue">HAR-70+</h3>
+<br>
+    <ul>
+    <li>Task: Activity Recognition</li>
+    <li>Inputs: 161 features
+        <ul>
+            <li style="font-size: 80%; padding-left: 15%;">Cross-sensory features</li>
+            <li style="font-size: 80%; padding-left: 15%;">Extracted from 250 measurements</li>
+        </ul>
+    </li>
+    <li>Output: 7 classes
+        <ul>
+            <li style="font-size: 80%; padding-left: 15%;">Daily activities</li>
+            <li style="font-size: 80%; padding-left: 15%;">Walking, shuffling, sitting, ...</li>
+        </ul>
+    </li>
+    </ul>
+</div>
+
+</div>
+
+---
+---
+
+# Experimental setup
+## Metrics
+
+---
+---
+
+# Experimental setup
+## Methods
+
 
 

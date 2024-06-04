@@ -1042,7 +1042,7 @@ u {
 <div class="cardimage">
 <img src="/imgs/walking.svg" alt="" class="blue" style="width: 20%; margin: auto; position: relative; top: 20%;"/>
 </div>
-<h3 class="blue">HAR-70+</h3>
+<h3 class="blue">HAR70+</h3>
 <br>
     <ul>
     <li>Task: Activity Recognition</li>
@@ -1099,28 +1099,15 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 ---
 ---
 
+<style>
+.modebar-container {
+    display: none;
+}
+</style>
+
 # Results
 
-<v-chart style="width: 800px !important; height: 400px !important" :option='{
-      title: {
-        text: "F1 score",
-        left: "center"
-      },
-      legend: {},
-      tooltip: {},
-      dataset: {
-        source: [
-          ["product", "2015", "2016", "2017"],
-          ["Matcha Latte", 43.3, 85.8, 93.7],
-          ["Milk Tea", 83.1, 73.4, 55.1],
-          ["Cheese Cocoa", 86.4, 65.2, 82.5],
-          ["Walnut Brownie", 72.4, 53.9, 39.1]
-        ]
-      },
-      xAxis: { type: "category" },
-      yAxis: {},
-      series: [{ type: "bar" }, { type: "bar" }, { type: "bar" }]
-    }' />
+<v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.7955, 0.7122, 0.8695], name: 'FedAvg', type: 'bar' }, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.8156, 0.7314, 0.9091], name: 'NEvoFed', type: 'bar' }]" :layout="{barmode: 'group', yaxis: { range: [0, 1.01] }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
 
 
 

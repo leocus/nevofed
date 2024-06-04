@@ -1064,10 +1064,37 @@ u {
 </div>
 
 ---
+layout: two-cols
 ---
 
 # Experimental setup
 ## Metrics
+<li v-click="1">F1 Score
+<div style="padding-left: 10%; display: block">
+1) Definition:
+</div>
+
+$$ F1 = \frac{2 \cdot p \cdot r}{p + r} \phantom{\sum_{i=1}^N \mathcal{M}_i} $$
+</li>
+<li v-click="2">Network size
+<div style="padding-left: 10%; display: block">
+1) Number of synapses
+</div>
+</li>
+
+::right::
+## Methods
+<li v-click="3">FedAvg
+<div style="padding-left: 10%; display: block">
+1) Definition:
+</div>
+
+$$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
+<div style="padding-left: 10%; display: block">
+2) Identically structured networks
+</div>
+</li>
+<li v-click="4">NEvoFed</li>
 
 ---
 ---

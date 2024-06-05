@@ -1078,7 +1078,7 @@ $$ F1 = \frac{2 \cdot p \cdot r}{p + r} \phantom{\sum_{i=1}^N \mathcal{M}_i} $$
 </li>
 <li v-click="2">b) Network size
 <div style="padding-left: 10%; display: block">
-1) Number of synapses
+1) FLOPs
 </div>
 </li>
 
@@ -1114,8 +1114,28 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 
 
 ---
+layout: full
 ---
 
+# Results
 
+### FLOPs
+
+<v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [3648, 2595840, 82368], name: 'FedAvg', type: 'bar' }, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [14, 5, 23], name: 'NEvoFed', type: 'bar',  }]" :layout="{barmode: 'group', yaxis: { type: 'log' }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
+
+
+
+---
+layout: full
+---
+
+# Networks: Apnea-ECG
+
+## FedAvg
+
+<img src="imgs/apnea_keras_model.png" alt="Apnea-ECG" style="width: 80%; margin: auto;"/>
+
+
+## NEvoFed
 
 

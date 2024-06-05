@@ -1069,14 +1069,14 @@ layout: two-cols
 
 # Experimental setup
 ## Metrics
-<li v-click="1">F1 Score
+<li v-click="1">a) F1 Score
 <div style="padding-left: 10%; display: block">
 1) Definition:
 </div>
 
 $$ F1 = \frac{2 \cdot p \cdot r}{p + r} \phantom{\sum_{i=1}^N \mathcal{M}_i} $$
 </li>
-<li v-click="2">Network size
+<li v-click="2">b) Network size
 <div style="padding-left: 10%; display: block">
 1) Number of synapses
 </div>
@@ -1084,7 +1084,7 @@ $$ F1 = \frac{2 \cdot p \cdot r}{p + r} \phantom{\sum_{i=1}^N \mathcal{M}_i} $$
 
 ::right::
 ## Methods
-<li v-click="3">FedAvg
+<li v-click="3">a) FedAvg
 <div style="padding-left: 10%; display: block">
 1) Definition:
 </div>
@@ -1094,7 +1094,7 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 2) Identically structured networks
 </div>
 </li>
-<li v-click="4">NEvoFed</li>
+<li v-click="4">b) NEvoFed</li>
 
 ---
 ---
@@ -1107,13 +1107,15 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 
 # Results
 
-<v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.7955, 0.7122, 0.8695], name: 'FedAvg', type: 'bar' }, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.8156, 0.7314, 0.9091], name: 'NEvoFed', type: 'bar' }]" :layout="{barmode: 'group', yaxis: { range: [0, 1.01] }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
+### F1 Score
+
+<v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.7955, 0.7122, 0.8695], name: 'FedAvg', type: 'bar', error_y: { type: 'data', array: [0.0784, 0.050, 0.054], visible: true }}, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.8156, 0.7314, 0.9091], name: 'NEvoFed', type: 'bar', error_y: { type: 'data', array: [0.0518, 0.0366, 0.0372], visible: true } }]" :layout="{barmode: 'group', yaxis: { range: [0, 1.01] }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
 
 
 
 ---
 ---
 
-# Bonus: Interpretability
+
 
 

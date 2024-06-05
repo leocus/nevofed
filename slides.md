@@ -1111,7 +1111,9 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 
 <v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.7955, 0.7122, 0.8695], name: 'FedAvg', type: 'bar', error_y: { type: 'data', array: [0.0784, 0.050, 0.054], visible: true }}, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [0.8156, 0.7314, 0.9091], name: 'NEvoFed', type: 'bar', error_y: { type: 'data', array: [0.0518, 0.0366, 0.0372], visible: true } }]" :layout="{barmode: 'group', yaxis: { range: [0, 1.01] }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
 
+<span style="border-bottom: 1px solid black; width:10%; position: fixed; left: 17%; top: 35%; text-align: center">*</span>
 
+<span style="border-bottom: 1px solid black; width:10%; position: fixed; left: 42.7%; top: 40%; text-align: center">*</span>
 
 ---
 layout: full
@@ -1122,20 +1124,4 @@ layout: full
 ### FLOPs
 
 <v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [3648, 2595840, 82368], name: 'FedAvg', type: 'bar' }, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [14, 5, 23], name: 'NEvoFed', type: 'bar',  }]" :layout="{barmode: 'group', yaxis: { type: 'log' }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
-
-
-
----
-layout: full
----
-
-# Networks: Apnea-ECG
-
-## FedAvg
-
-<img src="imgs/apnea_keras_model.png" alt="Apnea-ECG" style="width: 80%; margin: auto;"/>
-
-
-## NEvoFed
-
 

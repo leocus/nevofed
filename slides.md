@@ -1151,6 +1151,6 @@ layout: full
 
 ## Ohio-T1DM
 
-<img src="imgs/glucose_neat.png" style="width: 50%; margin: auto"/>
+<img src="/imgs/glucose_neat.png" style="width: 50%; margin: auto"/>
 
 $$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabla_{11}G(t) + 2.26 \cdot \nabla_{9}G(t) + 0.22) $$

@@ -1154,3 +1154,61 @@ layout: full
 <img src="/imgs/glucose_neat.png" style="width: 50%; margin: auto"/>
 
 $$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabla_{11}G(t) + 2.26 \cdot \nabla_{9}G(t) + 0.22) $$
+
+---
+---
+
+# Conclusions
+
+<ul class="flul">
+<li>
+<table><tr><td style="width: 5%"><img src="/imgs/nn(1).svg" alt="" class="blue" style="width: 100%"/></td><td><h3>Distributed Neuroevolution Method</h3></td></tr></table>
+<ul>
+<v-click at="1">
+<li style="padding-left: 10%;">Parallel EAs on different data</li>
+</v-click>
+<v-click at="2">
+<li style="padding-left: 10%;">Migration as a knowledge exchange operator</li>
+</v-click>
+</ul>
+</li>
+<li>
+<v-click at="3">
+<table><tr><td style="width: 5%"><img src="/imgs/privacy.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Privacy</h3></td></tr></table>
+</v-click>
+</li>
+<li>
+<v-click at="4">
+<table><tr><td style="width: 5%"><img src="/imgs/performance.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Better Performance</h3></td></tr></table>
+</v-click>
+</li>
+<li>
+<v-click at="5">
+<table><tr><td style="width: 5%"><img src="/imgs/speed.svg" alt="" class="green" style="width: 100%"/></td><td><h3>Smaller networks</h3></td></tr></table>
+</v-click>
+<ul>
+<v-click at="6">
+<li style="padding-left: 10%;">Enabling execution of tiny (batteryless) devices</li>
+</v-click>
+<v-click at="7">
+<li style="padding-left: 10%;">Interpretability</li>
+</v-click>
+</ul>
+</li>
+</ul>
+
+---
+class: text-center
+layout: intro
+---
+# Thanks for your attention!
+## NEvoFed: A Decentralized Approach to Federated Neuroevolution of Heterogeneous Neural Networks
+
+Leonardo Lucio Custode, Ivanoe De Falco, Antonio Della Cioppa, Giovanni Iacca, Umberto Scafuri
+
+<img src="/imgs/logo_unitn.jpg" alt="logo_unitn" style="height: 11%; position: absolute; top: 0px; left: 0px"/>
+<img src="/imgs/logo_unisa.png" alt="logo_unisa" style="height: 11%; position: absolute; top: 0px; right: 0px"/>
+<img src="/imgs/logo_cnr.svg" alt="logo_cnr" style="height: 11%; position: absolute; bottom: 0px; left: 0px"/>
+<img src="/imgs/logo_gecco.png" alt="logo_gecco" style="height: 11%; position: absolute; bottom: 0px; right: 0px"/>
+
+<span v-click="1" style="margin: auto; background-color: red; display: inline-block; padding: 16px; border-radius: 5px; border: 1px solid #a00; color: white"><h3>Vote us for the Best Paper Award! :)</h3></span>

@@ -1029,9 +1029,8 @@ u {
         </ul>
     </li>
     <li>
-    Output: 7 classes
+    Output: Future glucose level
         <ul>
-            <li style="font-size: 80%; padding-left: 15%;">Risk level</li>
             <li style="font-size: 80%; padding-left: 15%;">Time horizon: 30 min</li>
         </ul>
     </li>
@@ -1094,7 +1093,11 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 2) Identically structured networks
 </div>
 </li>
-<li v-click="4">b) NEvoFed</li>
+<li v-click="4">b) NEvoFed-NEAT
+<div style="padding-left: 10%; display: block">
+1) NEAT as the inner NE algorithm
+</div>
+</li>
 
 ---
 ---
@@ -1140,3 +1143,14 @@ layout: full
 <br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
 </span>
+
+---
+---
+
+# Bonus: Interpretability
+
+## Ohio-T1DM
+
+<img src="imgs/glucose_neat.png" style="width: 50%; margin: auto"/>
+
+$$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabla_{11}G(t) + 2.26 \cdot \nabla_{9}G(t) + 0.22) $$

@@ -1125,3 +1125,18 @@ layout: full
 
 <v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [3648, 2595840, 82368], name: 'FedAvg', type: 'bar' }, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [14, 5, 23], name: 'NEvoFed', type: 'bar',  }]" :layout="{barmode: 'group', yaxis: { type: 'log' }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
 
+
+<span v-click="1" style="position: fixed; left: 17%; top: 52%; text-align: center; width:11%; display: grid"><span>2.6&centerdot;<span>10<sup>2</sup></span> faster</span>
+<br>
+<span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
+</span>
+
+<span v-click="1" style="position: fixed; left: 42%; top: 30%; text-align: center; width:11%; display: grid"><span>5.2&centerdot;<span>10<sup>5</sup></span> faster</span>
+<br>
+<span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
+</span>
+
+<span v-click="1" style="position: fixed; left: 68%; top: 42%; text-align: center; width:11%; display: grid"><span>3.6&centerdot;<span>10<sup>3</sup></span> faster</span>
+<br>
+<span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
+</span>

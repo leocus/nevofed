@@ -215,7 +215,7 @@ td{
 </td>
 <td style="width: 18%;">
 <v-click at="5">
-<img src="/imgs/thief.svg" alt="" style="width: 80%; margin-left: auto; margin-right: auto"/>
+REPLACE ME
 </v-click>
 
 </td>

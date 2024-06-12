@@ -215,7 +215,7 @@ td{
 </td>
 <td style="width: 18%;">
 <v-click at="5">
-REPLACE ME
+<img src="/imgs/thief.svg" alt="" class="thief" style="width: 80%; margin-left: auto; margin-right: auto"/>
 </v-click>
 
 </td>
@@ -225,13 +225,13 @@ REPLACE ME
 <v-click at="4"><Arrow x1="0" y1="65" x2="80" y2="10" style="position: fixed; top: 48%; left: 57%"/></v-click>
 <v-click at="4"><Arrow x1="0" y1="10" x2="80" y2="10" style="position: fixed; top: 41%; left: 57%"/></v-click>
 <v-click at="5">
-<div class="line arrowDown dotted" style="height: 30%; width: 3px; position: fixed; top: 48%; left: 68.2%"></div>
+<div class="line arrowDown dotted" style="height: 31%; width: 3px; position: fixed; top: 48%; left: 68.2%"></div>
 </v-click>
 <v-click at="6">
-<div class="line dotted" style="height: 10%; width: 3px; position: fixed; top: 74%; left: 23.25%"></div>
-<div class="line dottedHorizontal" style="height: 3px; width: 43%; position: fixed; top: 84.5%; left: 23.25%"></div>
-<div class="line dotted" style="height: 3px; width: 3px; position: fixed; top: 84.5%; left: 23.25%"></div>
-<span style="position: fixed; bottom: 10%; left: 30%; padding: 0; margin: 0">Denise goes for a walk everyday at 2 pm</span>
+<div class="line dottedHorizontal" style="height: 3px; width: 42%; position: fixed; top: 85%; left: 23.25%"></div>
+<div class="line dotted" style="height: 10%; width: 3px; position: fixed; top: 75%; left: 23.25%"></div>
+<div class="line dotted" style="height: 3px; width: 3px; position: fixed; top: 85%; left: 23.25%"></div>
+<span style="position: fixed; bottom: 10%; left: 29%; padding: 0; margin: 0">Denise goes for a walk everyday at 2 pm</span>
 </v-click>
 
 <p style="position: fixed; bottom: 0%; font-size: 50%; padding: 0; margin: 0">Icons from: Font Awesome, Material Symbols, Phosphor, Streamline, IconPark TwoTone, Health Icons</p>
@@ -999,7 +999,7 @@ u {
 <div class="cardimage">
 <img src="/imgs/sleeping_guy.svg" alt="" class="orange" style="width: 30%; margin: auto"/>
 </div>
-<h3 class="orange">Apnea-ECG</h3>
+<h3 class="orange">Apnee-ECG</h3>
 <br>
     <ul>
     <li>Task: Obstructive Sleep Apnea</li>
@@ -1032,6 +1032,7 @@ u {
     Output: Future glucose level
         <ul>
             <li style="font-size: 80%; padding-left: 15%;">Time horizon: 30 min</li>
+            <li style="font-size: 80%; padding-left: 15%;">Target: classes of risk</li>
         </ul>
     </li>
     </ul>
@@ -1129,19 +1130,50 @@ layout: full
 <v-plotly :data="[{ x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [3648, 2595840, 82368], name: 'FedAvg', type: 'bar' }, { x: ['Apnee-ECG', 'Ohio-T1DM', 'HAR70+'], y: [14, 5, 23], name: 'NEvoFed', type: 'bar',  }]" :layout="{barmode: 'group', yaxis: { type: 'log' }}" :options="{yBounds: [0, 1]}" :display-mode-bar="false" :yBounds="[0, 1]"/>
 
 
-<span v-click="1" style="position: fixed; left: 17%; top: 52%; text-align: center; width:11%; display: grid"><span>2.6&centerdot;<span>10<sup>2</sup></span> faster</span>
+<span v-click="[1,2]" style="position: fixed; left: 16%; top: 52%; text-align: center; width:11%; display: grid"><span>2.6&centerdot;<span>10<sup>2</sup></span> faster</span>
 <br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
 </span>
 
-<span v-click="1" style="position: fixed; left: 42%; top: 30%; text-align: center; width:11%; display: grid"><span>5.2&centerdot;<span>10<sup>5</sup></span> faster</span>
+<span v-click="[1,2]" style="position: fixed; left: 42%; top: 30%; text-align: center; width:11%; display: grid"><span>5.2&centerdot;<span>10<sup>5</sup></span> faster</span>
 <br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
 </span>
 
-<span v-click="1" style="position: fixed; left: 68%; top: 42%; text-align: center; width:11%; display: grid"><span>3.6&centerdot;<span>10<sup>3</sup></span> faster</span>
+<span v-click="[1,2]" style="position: fixed; left: 68%; top: 42%; text-align: center; width:11%; display: grid"><span>3.6&centerdot;<span>10<sup>3</sup></span> faster</span>
 <br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
+</span>
+
+<span v-click="2" style="position: fixed; left: 11.25%; top: 54%; text-align: center; width:11%; display: block ruby">
+<img src="/imgs/battery.svg" alt="battery" class="red"/>
+1 day
+</span>
+
+<span v-click="3" style="position: fixed; left: 21%; top: 72.5%; text-align: center; width:11%; display: block ruby">
+<img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
+260 days
+</span>
+
+
+<span v-click="4" style="position: fixed; left: 36.5%; top: 32%; text-align: center; width:11%; display: block ruby">
+<img src="/imgs/battery.svg" alt="battery" class="red"/>
+1 day
+</span>
+
+<span v-click="4" style="position: fixed; left: 46.5%; top: 76%; text-align: center; width:11%; display: block ruby">
+<img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
+1400 yrs
+</span>
+
+<span v-click="4" style="position: fixed; left: 62%; top: 43.5%; text-align: center; width:11%; display: block ruby">
+<img src="/imgs/battery.svg" alt="battery" class="red"/>
+1 day
+</span>
+
+<span v-click="4" style="position: fixed; left: 72%; top: 71%; text-align: center; width:11%; display: block ruby">
+<img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
+10 yrs
 </span>
 
 ---
@@ -1188,7 +1220,7 @@ $$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabl
 </v-click>
 <ul>
 <v-click at="6">
-<li style="padding-left: 10%;">Enabling execution of tiny (batteryless) devices</li>
+<li style="padding-left: 10%;">Enabling execution on tiny (batteryless) devices</li>
 </v-click>
 <v-click at="7">
 <li style="padding-left: 10%;">Interpretability</li>

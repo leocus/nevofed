@@ -1194,7 +1194,7 @@ $$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabl
 
 <ul class="flul">
 <li>
-<table><tr><td style="width: 5%"><img src="/imgs/nn(1).svg" alt="" class="blue" style="width: 100%"/></td><td><h3>Distributed Neuroevolution Method</h3></td></tr></table>
+<table><tr><td style="width: 5%"><img src="/imgs/nn(1).svg" alt="" class="blue" style="width: 100%"/></td><td><h3>Federated Neuroevolution Framework</h3></td></tr></table>
 <ul>
 <v-click at="1">
 <li style="padding-left: 10%;">Parallel EAs on different data</li>

@@ -582,7 +582,7 @@ margin-left: 0!important;
 <li>
 <table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
 <ul>
-<li style="padding-left: 15%;"><span v-mark="{ at: 2, color: '#d30', strokeWidth: '3'}">Non-IID</span></li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 2, color: '#d30', strokeWidth: '3%'}">Non-IID</span></li>
 <li style="padding-left: 15%;">Harder optimization</li>
 </ul>
 </li>
@@ -590,14 +590,14 @@ margin-left: 0!important;
 <table><tr><td style="width: 10%"><img src="/imgs/badperformance.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Performance</h3></td></tr></table>
 <ul>
 <li style="padding-left: 15%;">FL can hardly match centralized learning</li>
-<li style="padding-left: 15%;"><span v-mark="{ at: 3, color: '#d30', strokeWidth: '3'}">A model does not see all the datapoints</span></li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 3, color: '#d30', strokeWidth: '3%'}">A model does not see all the datapoints</span></li>
 </ul>
 </li>
 <li>
 <table><tr><td style="width: 10%"><img src="/imgs/design.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Network design</h3></td></tr></table>
 <ul>
 <li style="padding-left: 15%;">Searching for architectures is much more costly</li>
-<li style="padding-left: 15%;"><span v-mark="{ at: 4, color: '#d30', strokeWidth: '3'}">NAS methods requires search + training</span></li>
+<li style="padding-left: 15%;"><span v-mark="{ at: 4, color: '#d30', strokeWidth: '3%'}">NAS methods requires search + training</span></li>
 </ul>
 </li>
 </ul>
@@ -1124,6 +1124,11 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 ---
 layout: full
 ---
+<style>
+.batterybox {
+    height: 1.5em;
+}
+</style>
 
 # Results
 
@@ -1133,47 +1138,44 @@ layout: full
 
 
 <span v-click="[1,2]" style="position: fixed; left: 16%; top: 52%; text-align: center; width:11%; display: grid"><span>2.6&centerdot;<span>10<sup>2</sup></span> faster</span>
-<br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
 </span>
 
 <span v-click="[1,2]" style="position: fixed; left: 42%; top: 30%; text-align: center; width:11%; display: grid"><span>5.2&centerdot;<span>10<sup>5</sup></span> faster</span>
-<br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
 </span>
 
 <span v-click="[1,2]" style="position: fixed; left: 68%; top: 42%; text-align: center; width:11%; display: grid"><span>3.6&centerdot;<span>10<sup>3</sup></span> faster</span>
-<br>
 <span style="border: 1px solid black; border-bottom: 0px; width: 100%; height: 25%">&nbsp;</span>
 </span>
 
-<span v-click="2" style="position: fixed; left: 11.25%; top: 54%; text-align: center; width:11%; display: block ruby">
+<span v-click="2" class='batterybox' style="position: fixed; left: 13%; top: 55%; text-align: center; width:11%; display: inline-flex">
 <img src="/imgs/battery.svg" alt="battery" class="red"/>
 1 day
 </span>
 
-<span v-click="3" style="position: fixed; left: 21%; top: 72.5%; text-align: center; width:11%; display: block ruby">
+<span v-click="3" class='batterybox' style="position: fixed; left: 21.75%; top: 73.5%; text-align: center; width:11%; display: inline-flex">
 <img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
 260 days
 </span>
 
 
-<span v-click="4" style="position: fixed; left: 36.5%; top: 32%; text-align: center; width:11%; display: block ruby">
+<span v-click="4" class='batterybox' style="position: fixed; left: 38.5%; top: 33%; text-align: center; width:11%; display: inline-flex">
 <img src="/imgs/battery.svg" alt="battery" class="red"/>
 1 day
 </span>
 
-<span v-click="4" style="position: fixed; left: 46.5%; top: 76%; text-align: center; width:11%; display: block ruby">
+<span v-click="4" class='batterybox' style="position: fixed; left: 47.75%; top: 77%; text-align: center; width:11%; display: inline-flex">
 <img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
 1400 yrs
 </span>
 
-<span v-click="4" style="position: fixed; left: 62%; top: 43.5%; text-align: center; width:11%; display: block ruby">
+<span v-click="4" class='batterybox' style="position: fixed; left: 64.5%; top: 44.5%; text-align: center; width:11%; display: inline-flex">
 <img src="/imgs/battery.svg" alt="battery" class="red"/>
 1 day
 </span>
 
-<span v-click="4" style="position: fixed; left: 72%; top: 71%; text-align: center; width:11%; display: block ruby">
+<span v-click="4" class='batterybox' style="position: fixed; left: 74.5%; top: 72%; width: 11%;text-align: center; display: inline-flex; vertical-align: bottom">
 <img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
 10 yrs
 </span>

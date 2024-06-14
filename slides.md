@@ -578,7 +578,7 @@ margin-left: 0!important;
 <h2><span v-click.hide='1'>Cons</span></h2>
 <h2 style="margin-top: -1em;"><span v-click='1'> Focus</span></h2>
 
-<ul class="flul">
+<ul class="flul" style="margin-top: 0.5em">
 <li>
 <table><tr><td style="width: 10%"><img src="/imgs/intersection.svg" alt="" class="red" style="width: 100%"/></td><td><h3>Data distribution</h3></td></tr></table>
 <ul>

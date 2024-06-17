@@ -53,6 +53,11 @@ layout: full
     tr {
         border: 0;
     }
+    .slideno {
+        position: fixed;
+        bottom: 0;
+        right: 4px;
+    }
 </style>
 
 # Why do we need Federated Learning?
@@ -239,6 +244,7 @@ td{
 <!--
 Here is another comment.
 -->
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 level: 2
@@ -422,6 +428,7 @@ $$
 $$
 </span>
 </v-click>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 layout: full
@@ -523,6 +530,7 @@ margin-left: 0!important;
 </td>
 </tr>
 </table>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 layout: full
@@ -607,6 +615,7 @@ margin-left: 0!important;
 
 <span v-click="5" style="position: fixed; top: 44.5%; left: 57%; background-color: red; padding: 16px; border-radius: 5px; border: 1px solid #a00; color: white"><h3>Federated Neuroevolution</h3></span>
 
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 level: 2
@@ -887,6 +896,7 @@ transition: slide-right
 <div v-click="[2,3]" style="position: fixed; top: 8%; left: 1%"><h3>Send best to server</h3></div>
 <div v-click="[3,4]" style="position: fixed; top: 8%; left: 1%"><h3>Receive other bests from server</h3></div>
 <div v-click="4" style="position: fixed; top: 8%; left: 1%"><h3>Update population</h3></div>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 ---
@@ -960,6 +970,7 @@ u {
 <span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 45%; left: 40%;"><Arrow x1="10" y1="110" x2="160" y2="10" /></span>
 <span v-click="1" style="text-align: center; position: fixed; width: 35%; top: 72%; left: 40%;"><Arrow x1="10" y1="80" x2="160" y2="10" /></span>
 
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 ---
@@ -1062,6 +1073,7 @@ u {
 </div>
 
 </div>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 layout: two-cols
@@ -1101,6 +1113,7 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 - NEAT as the inner NE algorithm
 </div>
 </li>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 ---
@@ -1120,6 +1133,7 @@ $$ \mathcal{M}_g = \frac{1}{N} \sum_{i=1}^N \mathcal{M}_i $$
 <span v-click="1" style="border-bottom: 1px solid black; width:10%; position: fixed; left: 17%; top: 35%; text-align: center">*</span>
 
 <span v-click="1" style="border-bottom: 1px solid black; width:10%; position: fixed; left: 42.7%; top: 40%; text-align: center">*</span>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 layout: full
@@ -1179,6 +1193,7 @@ layout: full
 <img src="/imgs/fullbattery.svg" alt="full battery" class="green"/>
 10 yrs
 </span>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 ---
@@ -1190,6 +1205,7 @@ layout: full
 <img src="/imgs/glucose_neat.png" style="width: 50%; margin: auto"/>
 
 $$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabla_{11}G(t) + 2.26 \cdot \nabla_{9}G(t) + 0.22) $$
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 ---
@@ -1232,6 +1248,7 @@ $$ G(t+6) = ReLU(0.97 \cdot G(t) + 0.09 \cdot \nabla_{12}G(t) + 0.69 \cdot \nabl
 </ul>
 </li>
 </ul>
+<div class="slideno"><SlideCurrentNo /> / <SlidesTotal /></div>
 
 ---
 class: text-center
